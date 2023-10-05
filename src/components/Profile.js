@@ -13,17 +13,17 @@ function Profile() {
       spacing={2}
     >
       <Avatar
-        src="/bilde-av-blomst.jpeg"
+        src="/amalie.jpg"
         alt="Blomst"
         sx={{
           width: 150,
           height: 150,
           margin: "auto",
-          border: "4px solid #3f51b5",
+          border: "4px solid #8dc7f0",
         }}
       />
-      <Typography variant="h4" gutterBottom color="#3f51b5">
-        Tilfeldig fin blomst
+      <Typography variant="h4" gutterBottom color="#8dc7f0">
+        Amalie Rege
       </Typography>
     </Stack>
   );
