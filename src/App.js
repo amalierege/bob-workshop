@@ -3,6 +3,7 @@ import { Stack } from "@mui/material";
 import Profile from "./components/Profile";
 import Description from "./components/Description";
 import ContactForm from "./components/ContactForm";
+import Footer from "./components/Footer";
 
 export default function App() {
   return (
@@ -10,6 +11,7 @@ export default function App() {
       <Profile />
       <Description />
       <ContactForm />
+      <Footer/>
     </Stack>
   );
 }

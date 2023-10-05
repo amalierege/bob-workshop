@@ -34,7 +34,7 @@ function ContactForm() {
         },
         body: JSON.stringify({
           ...formData,
-          access_key: "HER-MÅ-DU-LEGGE-INN-DIN-ACCESS-KEY", // Get your access key from https://web3forms.com/
+          access_key: "02c80e06-039d-45e6-b5aa-f7301e391b6e", // Get your access key from https://web3forms.com/
         }),
       });
 
@@ -42,16 +42,16 @@ function ContactForm() {
 
       if (data.success) {
         setSnackbarMessage(
-          "Din melding har blitt sendt! Takk for at du kontaktet oss."
+          "Your message has been sent! Thank you for contacting me. I will get back to you as soon as possible!"
         );
         setSnackbarType("success");
         setFormData({ email: "", message: "" });
       } else {
-        setSnackbarMessage("Noe gikk galt. Prøv igjen senere.");
+        setSnackbarMessage("Something went wrong. Try again later.");
         setSnackbarType("error");
       }
     } catch (error) {
-      setSnackbarMessage("Noe gikk galt. Prøv igjen senere.");
+      setSnackbarMessage("Something went wrong. Try again later.");
       setSnackbarType("error");
     } finally {
       setLoading(false);
